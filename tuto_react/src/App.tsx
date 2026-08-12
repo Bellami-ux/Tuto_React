@@ -1,24 +1,33 @@
-import Workflow from './components/Workflow';
-import HeroSection from './components/HeroSection';
-import Navbar from './components/Navbar';
-import FeatureSection from './components/featureSection';
-import Pricing from './components/Pricing';
-import Testimonials from './components/Testimonials';
+import About from './components/About';
+import Contact from './components/Contact';
+import FAQ from './components/FAQ';
+import FloatingWhatsapp from './components/FloatingWhatsapp';
 import Footer from './components/Footer';
+import Gallery from './components/Gallery';
+import Hero from './components/Hero';
+import Navbar from './components/Navbar';
+import Process from './components/Process';
+import Services from './components/Services';
+import Testimonials from './components/Testimonials';
 
 const App = () => {
   return (
     <>
       <Navbar />
-      <div className="max-w-7xl mx-auto pt-20 px-6">
-        <HeroSection />
-        <FeatureSection />
-        <Workflow />
-        <Pricing />
+      <main>
+        <Hero />
+        <About />
+        <Services />
+        <Gallery />
         <Testimonials />
-        <Footer />
-      </div>
+        <Process />
+        <FAQ />
+        <Contact />
+      </main>
+      <Footer />
+      <FloatingWhatsapp />
     </>
   );
 };
+
 export default App;
